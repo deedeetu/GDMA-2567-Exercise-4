@@ -70,7 +70,6 @@
 
 .wrapper {
 	width: 70%;
-	background-color: #ECB272;
 	margin: 0 auto;	
 }
 
@@ -88,7 +87,7 @@
 
 [class*="col-"] div{
 	height: 50px;
-	background-color: #617e61;
+	background-color: #529A86;
 }
 
 [class*="col-"]:last-of-type{
@@ -149,29 +148,87 @@
 	width: 12.5%;
 }
 
+.col-5-8 {
+	width: 62.5%;
+}
+
+.col-3-8 {
+	width: 37.5%;
+}
+
 .col-1-9 {
 	width: 11.11%;
+}
+
+.col-4-9 {
+	width: 44.44%;
+}
+
+.col-5-9 {
+	width: 55.55%;
 }
 
 .col-1-10 {
 	width: 10%;
 }
 
+.col-7-10 {
+	width: 70%;
+}
+
+.col-3-10 {
+	width: 30%;
+}
+
 .col-1-11 {
 	width: 9.09%;
+}
+
+.col-7-11 {
+	width: 63.63%;
+}
+
+.col-4-11 {
+	width: 36.36%;
 }
 
 .col-1-12 {
 	width: 8.33%;
 }
 
+.col-7-12 {
+	width: 58.31%;
+}
+
+.col-5-12 {
+	width: 41.65%;
+}
+
 .col-1-13 {
 	width: 7.69%;
+}
+
+.col-9-13 {
+	width: 69.21%;
+}
+
+.col-4-13 {
+	width: 30.76%;
 }
 
 .col-1-14 {
 	width: 7.14%;
 }
+
+.col-8-14 {
+	width: 57.12%;
+}
+
+.col-6-14 {
+	width: 42.84%;
+}
+
+
 /*----------3.2	- Site Header----------*/
 
 /*----------3.3	- Site Footer----------*/
@@ -180,11 +237,27 @@
 4.0 - MEDIA
 -------------------------------------------------------------- */
 
+/*----------4.1	- Images----------*/
 
-/*----------4.1	- Sprite----------*/
+figure {
+    display: block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+.img-responsive {
+	max-width: 100%;
+	display: block;
+	height: auto;
+}
 
 
-/*----------4.2	- Media Quiery----------*/
+/*----------4.2	- Sprite----------*/
+
+
+/*----------4.3	- Media Quiery----------*/
 
 @media screen and (max-width: 768px) {
 	.wrapper {
@@ -199,25 +272,27 @@
 		width: 90%;
 	}
 	
-	.col-1-4:nth-child(even), .col-1-5, .col-1-6:nth-child(3) {
+	.col-1-4:nth-child(even), .col-1-5, .col-1-6:nth-child(3), .col-1-7:nth-child(3), .col-1-7:nth-child(6), .col-1-8:nth-child(even), .col-1-9:nth-child(even), .col-1-10:nth-child(even), .col-1-11:nth-child(3n+0), .col-1-12:nth-child(even), .col-1-13:nth-child(3n+0), .col-1-14:nth-child(even) {
 		padding-right: 0;
 	}
+
 	
-	.col-1-4, .col-3-4 {
-		width: 50%;
-	}
-	
-	.col-1-5 {
-		width: 100%;
-	}
-	
-	.col-1-6 {
+	.col-1-6, .col-1-7, .col-1-11, .col-1-13 {
 		width: 33.33%;
 	}
 	
 	.col-5-6 {
 		width: 66.66%;
 	}
+	
+	.col-1-4, .col-3-4, .col-1-8, .col-1-9, .col-1-10, .col-1-11:nth-child(10), .col-1-11:last-child, .col-1-12, .col-1-14 {
+		width: 50%;
+	}
+	
+	.col-1-5, .col-1-7:last-child, .col-1-9:last-child, .col-1-13:last-child {
+		width: 100%;
+	}
+	
 }
 
 /*--------------------------------------------------------------
